@@ -1,0 +1,310 @@
+html {
+  --fontMain: "Oswald", sans-serif;
+  --fontPlay: "Source Sans Pro", sans-serif;
+  --primaryText: #b3d6f8;
+  --secondaryText: #2371bc;
+  --mainBack: #03111f;
+  --secondaryBack: #2371bc;
+  --outLine: #2371bc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+// TODO: VERTICAL ALIGN
+
+body {
+  background: transparent;
+  font-size: 1em;
+  vertical-align: baseline;
+  overflow-x: hidden;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .page-width {
+    margin: 0 auto;
+    max-width: 1140px;
+  }
+
+  header {
+    display: block;
+    background-image: url(/src/img/Celebration-21.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    overflow-x: auto;
+    border-bottom: 1px solid var(--secondaryText);
+    position: relative;
+    background-attachment: fixed;
+  }
+
+  .pre-header {
+    color: #fff;
+    margin-top: 55px;
+    display: flex;
+    align-items: center;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      margin-left: 60px;
+      font-family: var(--fontPlay);
+    }
+  }
+  .block1 {
+    span {
+      text-transform: uppercase;
+      font-family: var(--fontMain);
+      font-size: 5em;
+    }
+  }
+  .block2 {
+    margin-left: auto;
+    letter-spacing: 5px;
+  }
+  .main-nav {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+
+  .text-wrap {
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 0;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    span.slash {
+      display: inline-block;
+      font-size: 12px;
+      vertical-align: middle;
+      margin: 0 11px 0 8px;
+      color: #fff;
+    }
+    .btns-wrap {
+      text-align: center;
+      box-sizing: border-box;
+      display: flex;
+
+      a {
+        display: inline-block;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 3px;
+        line-height: 1;
+        padding: 10px 0;
+        vertical-align: middle;
+      }
+
+      .links-wrap {
+        background: var(--mainBack);
+        border: 1px solid var(--outLine);
+        border-right: none;
+        box-sizing: border-box;
+        float: left;
+        width: 100%;
+        max-width: 500px;
+      }
+      .subscribe {
+        background: var(--secondaryBack);
+        padding: 12px 0;
+        text-align: center;
+        float: right;
+        width: 140px;
+      }
+    }
+
+    span > i {
+      margin: 0 11px 0 8px;
+    }
+  }
+
+  section {
+    height: 100vh;
+    overflow: hidden;
+
+    // display: block;
+
+    .demark {
+      background: var(--mainBack);
+      overflow-x: auto;
+      z-index: 3;
+    }
+
+    .white-sxn {
+      background: url(/src/img/whtie-man.png) no-repeat scroll #ebebeb 0 0;
+      background-size: 40% auto;
+      background-position: right -20px;
+
+      border-bottom: 1px solid var(--secondaryText);
+      height: 70vh;
+      // opacity: 0.8;
+    }
+
+    .listen {
+      height: 70vh;
+      padding: 93px 0 96px 0;
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+
+    .join-form {
+      background: var(--secondaryBack);
+      margin-top: 20px;
+      height: auto;
+      overflow-x: inherit;
+      width: auto;
+      z-index: 5;
+
+      form {
+        margin-top: 1.3em;
+        padding: 22px 0 37px;
+        border-bottom: 1px solid var(--secondaryText);
+        // width: auto;
+
+        .left-mail-wrap {
+          // box-sizing: border-box;
+          width: calc(100% - 765px);
+
+          margin-right: 60px;
+          display: inline-block;
+          line-height: 1;
+
+          .bold-txt {
+            text-transform: uppercase;
+            font-family: var(--fontMain);
+            font-size: 3em;
+          }
+          .light-txt {
+            font-family: var(--fontPlay);
+            font-size: 2.2em;
+            font-weight: 100;
+          }
+        }
+        .right-mail-wrap {
+          // box-sizing: border-box;
+          display: inline-block;
+          width: calc(100% - 765px);
+
+          fieldset {
+            border: none;
+            // max-width: 400px;
+            max-width: 100%;
+
+            fieldset > * {
+              vertical-align: top;
+            }
+
+            .mail {
+              display: inline-block;
+              // width: calc(100% - 150px);
+              // width: 100%;
+              margin-right: 8px;
+              box-sizing: border-box;
+
+              input {
+                background: transparent;
+                padding: 5px 10px;
+                border: 1px solid #fff;
+                font-size: 14px;
+                height: 3.6vh;
+                color: #fff;
+                box-sizing: border-box;
+                // width: 100%;
+                appearance: none;
+                border-radius: 0px;
+                width: 230px;
+              }
+
+              label {
+                display: block;
+                color: var(--mainBack);
+                font-size: 12px;
+              }
+            }
+
+            .submit-btn {
+              width: 100px;
+              // width: 100%;
+              display: inline-block;
+              vertical-align: top;
+
+              a {
+                display: block;
+                border: 1px solid #fff;
+                z-index: 1;
+                box-sizing: border-box;
+                padding: 0;
+                cursor: pointer;
+              }
+              input {
+                width: 100%;
+                background: transparent;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-weight: 400;
+                font-size: 12px;
+                border: none;
+                margin: 0;
+                padding: 0;
+                height: 3.6vh;
+                vertical-align: top;
+                font-family: var(--fontPlay);
+                color: #fff;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    background: var(--mainBack);
+    color: rgb(236, 236, 236);
+    height: 20vh;
+    border-top: 1px solid var(--secondaryBack);
+  }
+}
+
+/*
+input {
+  background: transparent;
+  padding: 5px 10px;
+  border: 1px solid var(--mainBack);
+  font-size: 14px;
+  height: 3vh;
+  margin-right: 10px;
+  color: #fff;
+  box-sizing: border-box;
+  text-transform: none;
+}
+*/
+
+// @media only screen and (min-width: 768px) {
+//   .btns-wrap: max-width: 960px;
+// }
+
+form > * {
+  vertical-align: top;
+}
+
+.mail > * {
+  vertical-align: top;
+}
+
+input::placeholder {
+  color: rgb(206, 206, 206);
+}
